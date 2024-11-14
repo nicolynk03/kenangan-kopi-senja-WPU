@@ -94,6 +94,22 @@ body {
 }
 
 
+/* hero section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    /* vertically adjust content */
+    align-items: center;
+    background-image: url('../pictures/mike-kenneally-tNALoIZhqVM-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
 /* media queries (read more on responsive breakpoints as a reference) */
 
 /* laptop */
