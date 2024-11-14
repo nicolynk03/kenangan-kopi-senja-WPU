@@ -86,3 +86,71 @@ body {
 .navbar .navbar-extra a:hover {
     color: var(--primary);
 }
+
+/* adjusting visibility of the hamburger menu */
+#hamburger-menu {
+    /* initially invisible (desktop view) */
+    display: none;
+}
+
+
+/* media queries (read more on responsive breakpoints as a reference) */
+
+/* laptop */
+@media (max-width: 1366px) {
+    /* adjusts the whole page */
+    html {
+        font-size: 75%;
+    }
+}
+/* tablet */
+@media (max-width: 768px) {
+    html {
+        font-size: 62.5%;
+    }
+
+    /* display the hamburger menu */
+    #hamburger-menu {
+        display: inline-block;
+    }
+
+    /* adjust and moves the links to be within the hamburger menu */
+    .navbar .navbar-nav {
+        position: absolute;
+        /* placed outside of the screen/page */
+        top: 100%;
+        right: -100%;
+        background-color: #fff;
+        width: 30rem;
+        /* height of the hamburger menu fills the screen */
+        height: 100vh;
+        transition: 0.3s;
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar .navbar-nav a {
+        color: var(--background);
+        /* block makes the elements go down */
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 2rem;
+    }
+
+    /* hover animation adjustment */
+    .navbar .navbar-nav a::after {
+        transform-origin: 0 0;
+    }
+    .navbar .navbar-nav a:hover::after {
+        transform: scaleX(0.2);
+    }
+}
+/* mobile phones */
+@media (max-width: 450px) {
+    html {
+        font-size: 55%;
+    }
+}
