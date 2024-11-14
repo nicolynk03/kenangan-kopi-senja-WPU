@@ -3,6 +3,18 @@
     --primary: #b39f7a;
     --background: #010101;
 }
+/* pseudo-element (for the line animation element in navbar) */
+.navbar .navbar-nav a::after {
+    content: "";
+    display: block;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.1rem solid var(--primary);
+    transform: scaleX(0);
+}
+.navbar .navbar-nav a:hover::after {
+    transform: scaleX(0.6);
+    transition: 0.2s linear;
+}
 
 /* all selector */
 * {
@@ -20,4 +32,57 @@ body {
     background-color: var(--background);
     /* default font colour */
     color: #fff;
+}
+
+/* navbar */
+.navbar {
+    display: flex;
+    /* maintain space between elements (horizontally) */
+    justify-content: space-between;
+    /* maintain space between elements (vertically) */
+    align-items: center;
+    /* 1em = 16px */
+    padding: 1.4rem 7%;
+    background-color: rgba(1, 1, 1, 0.8);
+    border-bottom: 1px solid #8b7c60;
+    /* navbar stays on top */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+.navbar .navbar-logo span {
+    color: var(--primary);
+}
+
+.navbar .navbar-nav a {
+    color: #fff;
+    /* gives margin without it going down */
+    display: inline-block;
+    font-size: 1.2rem;
+    /* top and bottom: 0rem, left and right: 1rem */
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+    color: var(--primary);
+    /* line animation */
+}
+
+.navbar .navbar-extra a {
+    color: #fff;
+    /* top and bottom: 0rem, left and right: 0.5rem */
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+    color: var(--primary);
 }
