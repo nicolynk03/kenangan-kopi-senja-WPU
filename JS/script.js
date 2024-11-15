@@ -14,3 +14,8 @@ document.addEventListener('click', function(event) {
         navbarNav.classList.remove('active');
     }
 })
+
+// automate year changes
+// Reference: https://www.pixelhaze.academy/blog/automate-your-footers-copyright-year-with-javascript
+var currentYear = new Date().getFullYear(); // holds the current year
+document.getElementById("currentYear").innerHTML = currentYear; //set specified HTML element to currentYear variable
