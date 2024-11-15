@@ -32,7 +32,7 @@ body {
     background-color: var(--background);
     /* default font colour */
     color: #fff;
-    min-height: 2000px;
+    min-height: 3000px;
 }
 
 /* navbar */
@@ -160,19 +160,19 @@ body {
 }
 
 /* about section */
-.about {
+.about, .menu {
     /* top: 10rem, left and right: 7%, bottom: 1.4rem */
     padding: 8rem 7% 1.4rem;
 
 }
 
-.about h2 {
+.about h2, .menu h2 {
     text-align: center;
     font-size: 2.6rem;
     margin-bottom: 3rem;
 }
 
-.about h2 span {
+.about h2 span, .menu h2 span {
     color: var(--primary);
 }
 
@@ -205,6 +205,46 @@ body {
     font-weight: 100;
     line-height: 1.6;
 }
+
+/* menu section */
+.menu h2 {
+    margin-bottom: 1rem;
+}
+
+.menu p {
+    text-align: center;
+    max-width: 30rem;
+    margin: auto;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1.6;
+}
+
+.menu .row {
+    display: flex;
+    /* automatically goes down (if too many content) */
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: center;
+}
+
+.menu .row .menu-card {
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.menu .row .menu-card img {
+    /* shape it as a circle */
+    border-radius: 50%;
+    width: 80%;
+}
+
+.menu .row .menu-card .menu-card-title {
+    /* top: 1rem, left and right: auto, bottom: 0.5rem */
+    margin: 1rem auto 0.5rem;
+} 
+
+
 
 /* media queries (read more on responsive breakpoints as a reference) */
 
