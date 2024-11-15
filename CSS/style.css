@@ -324,6 +324,11 @@ body {
     .about .row content p {
         font-size: 1.6rem;
     }
+
+    /* menu */
+    .menu p {
+        font-size: 1.6rem;
+    }
 }
 /* mobile phones */
 @media (max-width: 450px) {
