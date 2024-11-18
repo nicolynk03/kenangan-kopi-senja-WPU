@@ -10,7 +10,9 @@ const searchForm = document.querySelector('.search-form');
 const searchBox = document.querySelector('#search-box');
 document.querySelector('#search-button').onclick = () => {
     searchForm.classList.toggle('active');
-}
+    // focuses on the input/search box when search button is clicked
+    searchBox.focus();
+};
 
 
 // click anywhere to close the hamburger menu
