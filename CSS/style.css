@@ -196,19 +196,19 @@ body {
 }
 
 /* about section */
-.about, .menu, .contact {
+.about, .menu, .contact, .products {
     /* top: 10rem, left and right: 7%, bottom: 1.4rem */
     padding: 8rem 7% 1.4rem;
 
 }
 
-.about h2, .menu h2, .contact h2 {
+.about h2, .menu h2, .contact h2, .products h2 {
     text-align: center;
     font-size: 2.6rem;
     margin-bottom: 3rem;
 }
 
-.about h2 span, .menu h2 span, .contact h2 span {
+.about h2 span, .menu h2 span, .contact h2 span, .products h2 span {
     color: var(--primary);
 }
 
