@@ -8,10 +8,12 @@ document.querySelector('#hamburger-menu').onclick = () => {
 // toggle active class (search form)
 const searchForm = document.querySelector('.search-form');
 const searchBox = document.querySelector('#search-box');
-document.querySelector('#search-button').onclick = () => {
+document.querySelector('#search-button').onclick = (event) => {
     searchForm.classList.toggle('active');
     // focuses on the input/search box when search button is clicked
     searchBox.focus();
+    // disable default action (brings to top when clicked)
+    event.preventDefault();
 };
 
 
