@@ -136,17 +136,53 @@ body {
     /* wrapper needs to be non-static */
     position: absolute;
     top: 100%;
-    right: 0;
+    right: -100%;
     height: 100vh;
     width: 35rem;
     padding: 0 1.5rem;
-    color: var(--primary);
+    color: var(--background);
     background-color: #fff;
+    transition: 0.3s;
+}
+
+.shopping-bag.active {
+    right: 0;
 }
 
 .shopping-bag img {
     height: 6rem;
     border-radius: 50%;
+}
+
+.shopping-bag h3 {
+    font-size: 1.6rem;
+    padding-bottom: 0.5rem;
+}
+
+.shopping-bag .item-price {
+    font-size: 1.2rem;
+
+}
+
+.shopping-bag .remove-item {
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.shopping-bag .remove-item:hover {
+    color: red;
+}
+
+.shopping-bag .bag-item {
+    margin: 2rem 0;
+    display: flex;
+    /* vertically aligned */
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed #666;
+    position: relative;
 }
 
 /* hero section */

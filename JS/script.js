@@ -16,11 +16,18 @@ document.querySelector('#search-button').onclick = (event) => {
     event.preventDefault();
 };
 
+// toggle active class (shopping button)
+const shoppingBag = document.querySelector('.shopping-bag');
+document.querySelector("#shopping-bag-button").onclick = (event) => {
+    shoppingBag.classList.toggle('active');
+}
+
 
 // click anywhere to close thean element
 // gets element with the id of hamburger-menu
 const hamburger = document.querySelector('#hamburger-menu');
 const searchButton = document.querySelector('#search-button');
+const shoppingButton = document.querySelector('#shopping-bag-button');
 document.addEventListener('click', function(event) {
     // if clicked outside of the hamburger menu
     if (!hamburger.contains(event.target) && !navbarNav.contains(event.target)) {
@@ -29,6 +36,10 @@ document.addEventListener('click', function(event) {
     // if clicked outside of the search button
     if (!searchButton.contains(event.target) && !searchForm.contains(event.target)) {
         searchForm.classList.remove('active');
+    }
+    // if clicked outside of the shopping bag button
+    if (!shoppingButton.contains(event.target) && !shoppingBag.contains(event.target)) {
+        shoppingBag.classList.remove('active');
     }
 })
 
