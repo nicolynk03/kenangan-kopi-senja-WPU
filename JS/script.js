@@ -20,6 +20,7 @@ document.querySelector('#search-button').onclick = (event) => {
 const shoppingBag = document.querySelector('.shopping-bag');
 document.querySelector("#shopping-bag-button").onclick = (event) => {
     shoppingBag.classList.toggle('active');
+    event.preventDefault();
 }
 
 
