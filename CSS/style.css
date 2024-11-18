@@ -280,6 +280,52 @@ body {
     margin: 1rem auto 0.5rem;
 } 
 
+/* products section */
+.products .row {
+    display: grid;
+    /* if size < 30 rem, made it to 1 section/column */
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    margin-top: 4rem;
+}
+
+.products .product-card {
+    text-align: center;
+    border: 1px solid #666;
+    padding: 2rem;
+}
+
+.products .product-card .product-icons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.products .product-card .product-icons a {
+    width: 4rem;
+    height: 4rem;
+    color: #fff;
+    border: 1px solid #666;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.products .product-card .product-icons a:hover {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.products .product-image {
+    padding: 1rem 0;
+}
+
+.products .product-image img {
+    height: 25rem;
+}
+
 /* contact section*/
 .contact .row {
     display: flex;
