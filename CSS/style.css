@@ -46,6 +46,7 @@ body {
     background-color: rgba(1, 1, 1, 0.8);
     border-bottom: 1px solid #8b7c60;
     /* navbar stays on top */
+    /* non-static positions: relative, fixed, absolute */
     position: fixed;
     top: 0;
     left: 0;
@@ -130,6 +131,23 @@ body {
     color: var(--background);
 }
 
+/* shopping cart */
+.shopping-bag {
+    /* wrapper needs to be non-static */
+    position: absolute;
+    top: 100%;
+    right: 0;
+    height: 100vh;
+    width: 35rem;
+    padding: 0 1.5rem;
+    color: var(--primary);
+    background-color: #fff;
+}
+
+.shopping-bag img {
+    height: 6rem;
+    border-radius: 50%;
+}
 
 /* hero section */
 .hero {
