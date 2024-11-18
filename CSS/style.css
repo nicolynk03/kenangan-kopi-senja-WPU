@@ -418,6 +418,12 @@ footer .credit a {
         transform: scaleX(0.2);
     }
 
+    .navbar .search-form {
+        /* search box wont get cut off when viewed */
+        width: 90%;
+        right: 2rem;
+    }
+
     /* about */
     .about .row {
         flex-wrap: wrap;
