@@ -326,6 +326,33 @@ body {
     height: 25rem;
 }
 
+.products .product-content h3 {
+    font-size: 2rem;
+}
+
+.products .product-rating {
+    font-size: 1.7rem;
+    padding: 0.8rem;
+    color: var(--primary);
+}
+
+.products .product-rating .star-full {
+    fill: var(--primary);
+}
+
+.products .product-price {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.products .product-price span {
+    text-decoration: line-through;
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+
+
 /* contact section*/
 .contact .row {
     display: flex;
