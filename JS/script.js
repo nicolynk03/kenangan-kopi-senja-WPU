@@ -42,7 +42,16 @@ document.addEventListener('click', function(event) {
     if (!shoppingButton.contains(event.target) && !shoppingBag.contains(event.target)) {
         shoppingBag.classList.remove('active');
     }
-})
+});
+
+// modal box
+const itemDetailModal = document.querySelector('#item-detail-modal');
+const itemDetailButton = document.querySelector('.item-detail-button');
+
+itemDetailButton.onclick = (event) => {
+    itemDetailModal.style.display = 'flex';
+    event.preventDefault();
+}
 
 // automate year changes
 // Reference: https://www.pixelhaze.academy/blog/automate-your-footers-copyright-year-with-javascript
