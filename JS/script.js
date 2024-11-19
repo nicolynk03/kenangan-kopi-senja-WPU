@@ -46,12 +46,15 @@ document.addEventListener('click', function(event) {
 
 // modal box
 const itemDetailModal = document.querySelector('#item-detail-modal');
-const itemDetailButton = document.querySelector('.item-detail-button');
+const itemDetailButtons = document.querySelectorAll('.item-detail-button');
 
-itemDetailButton.onclick = (event) => {
-    itemDetailModal.style.display = 'flex';
-    event.preventDefault();
-};
+// loops all elements in the nodelist (details button)
+itemDetailButtons.forEach((btn) => {
+    btn.onclick = (event) => {
+        itemDetailModal.style.display = 'flex';
+        event.preventDefault();
+    };
+});
 
 // close button (modal box)
 document.querySelector('.modal .close-icon').onclick = (event) => {
@@ -59,10 +62,9 @@ document.querySelector('.modal .close-icon').onclick = (event) => {
     event.preventDefault();
 }
 // if clicked outside of the modal box (to close)
-const modal = document.querySelector("#item-detail-modal");
 window.onclick = (e) => {
-    if (e.target == modal) {
-        modal.style.display = 'none';
+    if (e.target == itemDetailModal) {
+        itemDetailModal.style.display = 'none';
     }
 }
 

@@ -510,7 +510,7 @@ footer .credit a {
     position: relative;
     background-color: #fefefe;
     color: var(--background);
-    margin: 15% auto;
+    margin: 14% auto;
     padding: 1.2rem;
     border: 1px solid #666;
     width: 80%;
@@ -542,7 +542,7 @@ footer .credit a {
 }
 
 .modal-content img {
-    height: 20rem;
+    height: 15rem;
     margin-right: 2rem;
     margin-left: 2rem;
 }
@@ -563,12 +563,27 @@ footer .credit a {
     padding: 1rem 1.6rem;
 }
 
+.add-cart-button {
+    margin-bottom: 0.2rem;
+}
+
 /* media queries (read more on responsive breakpoints as a reference) */
 /* laptop */ 
 @media (max-width: 1366px) {
     /* adjusts the whole page */
     html {
         font-size: 75%;
+    }
+
+    .modal-container {
+        position: relative;
+        background-color: #fefefe;
+        color: var(--background);
+        margin: 18% auto;
+        padding: 1.2rem;
+        border: 1px solid #666;
+        width: 80%;
+        animation: modalAnimation 0.5s;
     }
 }
 /* tablet */
@@ -668,10 +683,31 @@ footer .credit a {
     .modal-content {
         flex-wrap: wrap;
     }
+
+    .modal-container {
+        position: relative;
+        background-color: #fefefe;
+        color: var(--background);
+        margin: 25% auto;
+        padding: 1.2rem;
+        border: 1px solid #666;
+        width: 80%;
+        animation: modalAnimation 0.5s;
+    }
 }
 /* mobile phones */
 @media (max-width: 450px) {
     html {
         font-size: 55%;
+    }
+    .modal-container {
+        position: relative;
+        background-color: #fefefe;
+        color: var(--background);
+        margin: 30% auto;
+        padding: 1.2rem;
+        border: 1px solid #666;
+        width: 80%;
+        animation: modalAnimation 0.5s;
     }
 }
