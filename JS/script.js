@@ -51,6 +51,19 @@ const itemDetailButton = document.querySelector('.item-detail-button');
 itemDetailButton.onclick = (event) => {
     itemDetailModal.style.display = 'flex';
     event.preventDefault();
+};
+
+// close button (modal box)
+document.querySelector('.modal .close-icon').onclick = (event) => {
+    itemDetailModal.style.display = 'none';
+    event.preventDefault();
+}
+// if clicked outside of the modal box (to close)
+const modal = document.querySelector("#item-detail-modal");
+window.onclick = (e) => {
+    if (e.target == modal) {
+        modal.style.display = 'none';
+    }
 }
 
 // automate year changes
