@@ -282,6 +282,11 @@ body {
 
 .about .row .about-image img {
     width: 100%;
+    /* from svg silh */
+    mask-image: url(../pictures/coffee-beans-overlay.svg);
+    mask-size: 50%;
+    mask-position: center;
+    mask-repeat: no-repeat;
 }
 
 .about .row .content {
